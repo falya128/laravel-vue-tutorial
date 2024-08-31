@@ -1,9 +1,9 @@
 import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
 import App from "./App.vue";
-import Index from "./pages/Index.vue";
+import PokemonList from "./pages/PokemonList.vue";
 
-const routes = [{ path: "/", component: Index }];
+const routes = [{ path: "/pokemons", component: PokemonList }];
 
 const router = createRouter({
   history: createWebHistory(),
