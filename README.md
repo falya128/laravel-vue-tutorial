@@ -1,4 +1,4 @@
-# laravel Vue Turorial
+# Laravel Vue Turorial
 
 ## 概要
 
