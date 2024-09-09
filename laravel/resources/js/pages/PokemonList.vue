@@ -91,11 +91,11 @@ export default {
       });
 
       this.pokemons = [];
-      data.results.forEach(async (result) => {
+      for (const result of data.results) {
         const imageUrl = await this.fetchPokemonImage(result.name);
         const name = await this.fetchPokemonName(result.name);
         this.pokemons.push({ name, imageUrl, englishName: result.name });
-      });
+      }
     },
 
     /**
